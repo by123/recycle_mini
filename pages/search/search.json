@@ -1,0 +1,6 @@
+{
+  "onReachBottomDistance": 10,
+  "usingComponents": {
+    "xht-ad": "/components/xhtAD/xhtAD"
+  }
+}

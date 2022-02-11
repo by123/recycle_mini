@@ -1,0 +1,20 @@
+<!--pages/advice/advice.wxml-->
+<view class="container">
+  <view class="view_bg">
+    <view class="content">
+      <view class="advice_title">为响应国家号召、普及垃圾分类；此小程序，供大家查询使用。个人资源有限，虚心接受大家建议，完善产品功能，谢谢大家支持!</view>
+      <input class="advice_input" placeholder='请输入您的手机号' placeholder-style="color:#AFB7CA" bindinput="onInputChange"></input>
+      <form bindsubmit="bindFormSubmit">
+        <textarea class="advice_area" placeholder='请输入您的期望和建议' name="textarea" placeholder-style="color:#AFB7CA"></textarea>
+        <view class="btn_view">
+          <button class="advice_btn btn" form-type="submit" id="0">提交</button>
+          <button class="advice_btn btn_highlight" form-type="submit" id="1">提交并支持</button>
+        </view>
+      </form>
+    </view>
+    <view class="xht_banner" style="width:100%;  position: fixed;bottom:0;">
+  <xht-ad data-id="banner" adData="{{xhtad.adData}}" bindadload="xhtadImgLoad" bindclick="xhtappoIntView" bindclose="xhtadClose" class="xht_component">
+  </xht-ad>
+</view>
+  </view>
+</view>

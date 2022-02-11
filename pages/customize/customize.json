@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "我来出题",
+      "usingComponents": {
+        "xht-ad": "/components/xhtAD/xhtAD"
+      }
+}

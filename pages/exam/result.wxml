@@ -1,0 +1,16 @@
+<!--pages/exam/result.wxml-->
+<view class="container">
+  <view class="answer_view">
+    <view class="normal_txt title">2019垃圾分类统一考试全国卷（一）</view>
+    <view class="normal_txt subject">一、选择题</view>
+    <view wx:for="{{datas}}" wx:key="key" wx:for-index="index">
+      <view class="subject_txt">
+        <view class="normal_txt">{{index+1}}.{{item.name}}</view>
+        <view wx:for="{{item.subject}}" wx:key="key" wx:for-item="category" class="category_view">
+          <view class="category_item {{category.answer ? 'answerstyle' : ''}} {{category.right ? 'rightstyle' : ''}}">{{category.tag}}：{{category.name}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+</view>

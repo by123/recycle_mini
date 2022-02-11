@@ -1,0 +1,7 @@
+<view class="container">
+  <view class='testview'>
+    <text class="test_title">{{strTestTitle}}</text>
+    <view class="btn_start" bindtap="onStartTap">{{strTestStart}}</view>
+    <button class="btn_customize" bindtap="onCustomizeTap" open-type="share">{{strTestCustomize}}</button>
+  </view>
+</view>

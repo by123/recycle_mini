@@ -1,0 +1,34 @@
+<!--pages/category/category.wxml-->
+<view class="container">
+  <view class="cardview">
+    <view class="swiper_tab">
+      <view class="tab_btn {{currentTab == 0 ? 'active':''}}" bindtap="onRecycleTap">可回收物</view>
+      <view class="tab_btn {{currentTab == 1 ? 'active':''}}" bindtap="onHazardousTap">有害垃圾</view>
+      <view class="tab_btn {{currentTab == 2 ? 'active':''}}" bindtap="onHouseholdTap">湿垃圾</view>
+      <view class="tab_btn {{currentTab == 3 ? 'active':''}}" bindtap="onResidualTap">干垃圾</view>
+    </view>
+    <swiper class="category_swiper" current="{{currentTab}}" bindchange="onSwiperTabChange">
+      <view wx:for="{{datas}}" wx:key="index">
+        <swiper-item>
+            <view class="category_view">
+              <image src="{{item.imgUrl}}" class="img"></image>
+              <text class='description normal_txt'><text class='main_color_txt'>{{rubbishData.cname}}</text>{{item.description}}</text>
+            </view>
+            <view class="line"></view>
+            <view class="content">
+              <view wx:for="{{item.throw}}" wx:key="index">
+                <view class="item_view">
+                  <view class="point">●</view>
+                  <view class="small_txt">{{item}}</view>
+                </view>
+              </view>
+            </view>
+            <view class="line"></view>
+            <view class="content">
+              <view class="small_txt">{{item.example}}</view>
+            </view>
+        </swiper-item>
+      </view>
+    </swiper>
+  </view>
+</view>

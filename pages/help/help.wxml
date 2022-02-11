@@ -1,0 +1,7 @@
+<view class="container">
+<view class='btnview'>
+  <view wx:for="{{buttons}}" wx:key="index" class="helpview" data-index="{{index}}" bindtap="onBtnTap">
+     <view class="btn">{{item}}</view>
+  </view>
+  </view>
+</view>

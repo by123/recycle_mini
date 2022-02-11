@@ -1,0 +1,61 @@
+/* pages/detail/detail.wxss */
+@import "../common/css/common.wxss";
+
+.name{
+  margin-top: 50rpx;
+}
+
+.cardview{
+  width: 670rpx;
+  height: auto;
+  margin: 40rpx;
+  background-color: white;
+  background: #FFFFFF;
+  box-shadow: 0 0 30px 0 rgba(141,151,158,0.76);
+  border-radius: 48rpx;
+  margin-top: 60rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.category_view {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
+.category_view .img {
+  width: 236rpx;
+  height: 350rpx;
+  margin-left: 20rpx
+}
+
+.category_view .description {
+  width: 360rpx;
+  margin-right: 40rpx;
+}
+
+
+.content{
+  margin: 30rpx;
+}
+
+.item_view{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.point{
+  font-size: 12px;
+  margin-right: 20rpx;
+}
+

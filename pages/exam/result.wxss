@@ -1,0 +1,70 @@
+/* pages/exam/result.wxss */
+@import "../common/css/common.wxss";
+
+.answer_view {
+  width: 100%;
+  background-color: white;
+  position: absolute;
+  z-index: 3;
+  padding-bottom: 120rpx;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-items: center;
+}
+
+.answer_view .title {
+  margin-top: 30rpx;
+  color: red;
+}
+
+.answer_view .subject {
+  margin-top: 30rpx;
+  width: 690rpx;
+}
+
+.answer_view .name {
+  margin-top: 30rpx;
+  width: 690rpx;
+}
+
+.subject_txt{
+  margin-left: 30rpx;
+  margin-top: 30rpx;
+}
+
+.category_view {
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  margin-top: 20rpx;
+  display: inline-block;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 24rpx;
+  color: #757685;
+}
+
+.category_item{
+  width: 300rpx;
+}
+
+.back_btn{
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  height: 100rpx;
+  background-color: rgb(105, 226, 198);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30rpx;
+  color: white;
+}
+
+.answerstyle{
+  color: red;
+}
+
+.rightstyle{
+  color: rgb(105, 226, 198);
+}

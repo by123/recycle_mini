@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "添加垃圾分类",
+  "usingComponents": {
+    "xht-ad": "/components/xhtAD/xhtAD"
+  }
+}

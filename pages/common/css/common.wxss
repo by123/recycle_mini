@@ -1,0 +1,147 @@
+.tabitem{
+  flex: 1;
+  height: 100rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #BDBDBD;
+}
+
+/*可回收物*/
+.recycle_color {
+  color: #094883;
+}
+
+/*有害垃圾*/
+.hazardous_color {
+  color: #e2362c;
+}
+
+/*湿垃圾*/
+.household_color {
+  color: #634031;
+}
+
+/*干垃圾*/
+.residual_color {
+  color: #2e2a2b;
+}
+
+
+
+
+.recycle_bg_color {
+  background-color: #094883;
+}
+
+.hazardous_bg_color {
+  background-color: #e2362c;
+}
+
+.household_bg_color {
+  background-color: #634031;
+}
+
+.residual_bg_color {
+  background-color: #2e2a2b;
+}
+
+
+/*按钮*/
+.btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32rpx;
+  color:#52DA93;
+  background: #FFFFFF;
+  box-shadow: 0 2px 9px 0 #2FCF94;
+}
+
+.btn_highlight{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32rpx;
+  color:#FFFFFF;
+  background: #52DA93;
+}
+
+
+/*大字体*/
+.big_txt{
+  color:#353435;
+  font-size: 60rpx;
+  font-family: PingFangSC-Medium;
+}
+
+/*大字体*/
+.medium_txt{
+  color:#353435;
+  font-size: 36rpx;
+  font-family: PingFangSC-Medium;
+}
+
+/*主色字体*/
+.main_color_txt{
+  color:#52DA93;
+  font-size: 42rpx;
+  font-family: PingFangSC-Medium;
+}
+
+
+/*普通字体*/
+.normal_txt{
+  color:#353435;
+  font-size: 32rpx;
+  font-family: PingFangSC-Regular;
+}
+
+/*小字体*/
+.small_txt{
+  color:#353435;
+  font-size: 30rpx;
+  font-family: PingFangSC-Regular;
+}
+
+/*提示字体*/
+.tips_txt{
+  color:#353435;
+  font-size: 24rpx;
+  font-family: PingFangSC-Regular;
+}
+
+/*页面背景*/
+.bg{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  z-index: 1;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(rgb(156, 235, 186), rgb(105, 226, 198));
+}
+
+/*通用分割线*/
+.line{
+  width: 100%;
+  border-bottom: 1px #dedede solid;
+}
+
+/*卡片*/
+.card{
+  background-color: white;
+  box-shadow: 0 0 30px 0 rgba(141,151,158,0.76);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.red{
+  color: #FF0000;
+}
+
+.orangered{
+  color: #FF4500;
+}

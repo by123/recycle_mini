@@ -1,0 +1,24 @@
+<view class='container'>
+<view class="topview">
+  <input class="input_search" placeholder="搜索垃圾查看分类" bindconfirm="onTextChange" value="{{inputValue}}"></input>
+  <image class="img_search" src="../../imgs/ic_search.png" bindtap="onSearchTap"></image>
+  <view class="btn_cancel" bindtap="onCancelTap">取消</view>
+</view>
+<view hidden="{{hasResult}}">
+  <text class="noresult" bindtap="onAddTap">搜索不到结果？<text class="add">去添加</text></text>
+</view>
+<scroll-view scroll-y="true" class='scrollview' bindscrolltolower="onReachBottom">
+  <view wx:for="{{datas}}" class='list' wx:key="key" data-index="{{index}}" bindtap='onItemClick'>
+    <text class="result">{{item.name}}<text  wx:if="{{item.cid == 1}}" class="recycle_color">({{item.cname}})</text>
+    <text wx:elif="{{item.cid == 2}}" class="hazardous_color">({{item.cname}})</text>
+    <text wx:elif="{{item.cid == 3}}" class="household_color">({{item.cname}})</text>
+    <text wx:else class="residual_color">({{item.cname}})</text>
+    </text>
+  </view>
+</scroll-view>
+</view>
+
+   <view class="xht_banner" style="width:100%;  position: fixed;bottom:0;">
+      <xht-ad data-id="banner" adData="{{xhtad.adData}}" bindadload="xhtadImgLoad" bindclick="xhtappoIntView" bindclose="xhtadClose" class="xht_component">
+      </xht-ad>
+    </view>

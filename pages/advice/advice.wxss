@@ -1,0 +1,83 @@
+/* pages/advice/advice.wxss */
+@import "../common/css/common.wxss";
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  z-index: 1;
+  margin-left: 60rpx;
+  margin-right: 60rpx;
+  width: 630rpx;
+  font-family: PingFangHK-Regular;
+  font-size: 14px;
+  color: #353435;
+}
+
+.advice_title {
+  margin-top: 40rpx;
+  letter-spacing: 4rpx;
+  font-size: 13px;
+  color: #353435;
+}
+
+.advice_input {
+  width: 100%;
+  height: 72rpx;
+  margin-top: 40rpx;
+  background: white;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  box-shadow: 0 8px 21px 0 rgba(16, 150, 102, 0.30);
+  border-radius: 36rpx;
+}
+
+.advice_area {
+  margin-left: 60rpx;
+  margin-right: 60rpx;
+  width: 630rpx;
+  height: 260rpx;
+  margin-top: 40rpx;
+  background: white;
+  padding: 30rpx;
+  box-shadow: 0 8px 21px 0 rgba(16, 150, 102, 0.30);
+  border-radius: 36rpx;
+}
+
+.btn_view{
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 60rpx;
+  margin-right: 60rpx;
+  width: 630rpx;
+}
+.advice_btn{
+  height: 80rpx;
+  margin-top: 80rpx;
+  width: 300rpx;
+  border-radius: 40rpx;
+  margin-left: 40rpx;
+}
+
+.advice_btn::after{
+  border: none;
+}
+
+.view_bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgb(156, 235, 186), rgb(105, 226, 198));
+}
+
+.img_bg {
+  position: absolute;
+  width: 100%;
+  height: 842rpx;
+  z-index: 0;
+  bottom: 0;
+  margin-bottom: 60rpx;
+}

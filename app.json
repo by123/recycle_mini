@@ -1,0 +1,35 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/search/search",
+    "pages/test/test",
+    "pages/category/category",
+    "pages/help/help",
+    "pages/exam/exam",
+    "pages/add/add",
+    "pages/advice/advice",
+    "pages/home/home",
+    "pages/customize/customize",
+    "pages/detail/detail",
+    "pages/exam/result"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#9CEBBA",
+    "navigationBarTitleText": "上门垃圾回收",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "navigateToMiniProgramAppIdList": [
+    "wxc81e1d5988e2281e",
+    "wx8bfe0ecea4920777",
+    "wx81c2649fccc8c470",
+    "wx9d4aef98fb7277d9",
+    "wx274b042922e587d9",
+    "wx593c17b1b53364c8",
+    "wxf29048e2c0a489a7",
+    "wx82abad761d273ae8",
+    "wxde58042f19823451"
+  ]
+}

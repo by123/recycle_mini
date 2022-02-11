@@ -1,0 +1,43 @@
+.testview{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+}
+
+.test_title{
+  font-size: 40rpx;
+  margin-top: 60rpx;
+}
+
+.btn_start{
+  width: 500rpx;
+  height: 120rpx;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  margin-top: 160rpx;
+  font-size: 40rpx;
+  color: white;
+  background: linear-gradient(to top right,rgb(255, 20, 157), rgb(255, 114, 96));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 6rpx;
+  border-radius: 4px;
+}
+
+.btn_customize{
+  width: 500rpx;
+  height: 120rpx;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  margin-top: 100rpx;
+  font-size: 40rpx;
+  color: white;
+  background: linear-gradient(to top right,rgb(3, 201, 191), rgb(106, 96, 255));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 6rpx;
+  border-radius: 4px;
+}

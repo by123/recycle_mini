@@ -1,0 +1,29 @@
+
+.btnview{
+  margin-top: 110rpx;
+  z-index: 2;
+}
+.helpview{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn{
+  width: 590rpx;
+  margin-left: 80rpx;
+  margin-right: 80rpx;
+  margin-top: 80rpx;
+  height: 80rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40rpx;
+  color:#52DA93;
+  background: #FFFFFF;
+  box-shadow: 0 2px 9px 0 #2FCF94;
+  border-radius: 40rpx;
+
+}

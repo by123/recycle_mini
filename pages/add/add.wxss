@@ -1,0 +1,45 @@
+/* pages/add.wxss */
+@import "../common/css/common.wxss";
+
+.add_name{
+   width: 570rpx;
+  height: 72rpx;
+  margin-top: 60rpx;
+  background: white;
+  padding-left: 50rpx;
+  padding-right: 50rpx;
+  box-shadow: 0 8px 21px 0 rgba(16, 150, 102, 0.30);
+  border-radius: 36rpx;
+  font-family: PingFangHK-Regular;
+  font-size: 14px;
+  color: #353435;
+  letter-spacing: -0.34px;
+  line-height: 22px;
+}
+
+.title{
+  margin-top: 40rpx;
+}
+
+.radio-group{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.radio{
+  width: 630rpx;
+  margin-top: 30rpx;
+  letter-spacing: 6rpx;
+}
+
+.add_btn{
+  margin-left: 60rpx;
+  margin-right: 60rpx;
+  height: 100rpx;
+  margin-top: 60rpx;
+  width: 630rpx;
+}
+

@@ -1,0 +1,108 @@
+@import "../common/css/common.wxss";
+
+.cardview{
+  width: 670rpx;
+  height: 960rpx;
+  margin-left: 40rpx;
+  margin-right: 40rpx;
+  background-color: white;
+  box-shadow: 0 0 30px 0 rgba(141,151,158,0.76);
+  border-radius: 48rpx;
+  margin-top: 60rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.swiper_tab {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 60rpx;
+  color: white;
+  margin-top: 40rpx;
+  font-size: 26rpx;
+  font-family: PingFangSC-Medium;
+  justify-content: space-around;
+}
+
+.tab_btn{
+  display: flex;
+  width: 140rpx;
+  height: 60rpx;
+  border-radius: 30rpx;
+  background-color: white;
+  color:#52DA93;
+  box-shadow: 0 2px 9px 0 rgba(175,183,202,0.43);
+  align-items: center;
+  justify-content: center;
+}
+
+.active{
+  color:#ffffff;
+  background-color: #52DA93;
+
+}
+
+
+.swiper{
+  width: 100%;
+}
+
+.category_swiper {
+  width: 670rpx;
+  height: 900rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.category_view {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+
+.category_view {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
+.category_view .img {
+  width: 236rpx;
+  height: 350rpx;
+  margin-left: 20rpx
+}
+
+.category_view .description {
+  width: 360rpx;
+  margin-right: 40rpx;
+}
+
+
+.content{
+  margin: 30rpx;
+}
+
+.item_view{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.point{
+  font-size: 12px;
+  margin-right: 20rpx;
+}
+
+

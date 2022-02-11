@@ -1,0 +1,43 @@
+<!--pages/exam/exam.wxml-->
+<view class="container">
+  <view class="bg">
+    <view class="eaxm_view card" hidden="{{isFinish}}">
+      <view class="exam_top">
+        <view class="small_txt">题目</view>
+        <view class="small_txt">{{currentIndex+1}}/10</view>
+      </view>
+      <view class="big_txt">{{current.name}}</view>
+      <view class="exam_category normal_txt">属于以下哪种分类</view>
+      <view class="exam_select">请选择:</view>
+      <view wx:for="{{btns}}" wx:key="key" data-index="{{index}}" bindtap="onSelectBtnTap">
+        <view class="exam_btn {{item.color}}" hover-class="active">{{item.name}}</view>
+      </view>
+    </view>
+    <view class="result_view" hidden="{{!isFinish}}">
+      <view class="result card">
+        <view class="medium_txt">答题完毕</view>
+        <text class="score_txt medium_txt">获得 <text class="score">{{score}}</text> 分</text>
+        <text class="normal_txt">获得「<text class="title">{{titleStr}}</text> 」称号</text>
+        <view class="rank_txt">{{beyondStr}}</view>
+        <image src="../../imgs/score.png" class="score_img"></image>
+        <view class="subject_view">
+          <text class="small_txt">共计：<text class="red">10 </text>题</text>
+          <text class="small_txt">正确：<text class="red">{{rightCount}} </text>题</text>
+          <text class="small_txt">错误：<text class="red">{{errorCount}} </text>题</text>
+        </view>
+        <view class="share_btn" hover-class="active" bindtap="onShareBtnClick">分享成绩</view>
+        <view class="subject_view">
+          <view class="oncemore_btn" hover-class="active" bindtap="onOnceMoreBtnClick">再测一次</view>
+          <view class="answer_btn" hover-class="active" bindtap="onAnswerBtnClick">查看答案</view>
+        </view>
+      </view>
+    </view>
+    <view class="xht_banner" style="width:100%;  position: absolute;bottom:0;">
+      <xht-ad data-id="banner" adData="{{xhtad.adData}}" bindadload="xhtadImgLoad" bindclick="xhtappoIntView" bindclose="xhtadClose" class="xht_component">
+      </xht-ad>
+    </view>
+  </view>
+  <canvas canvas-id='share' class="canvas" hidden="{{hiddenSave}}"></canvas>
+  <view class="save_btn btn" bindtap="onSavePhoto" hidden="{{hiddenSave}}">保存</view>
+</view>
+

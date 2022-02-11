@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "首页",
+  "usingComponents": {
+    "component_home": "../home/home",
+    "component_test": "../test/test",
+    "component_category": "../category/category",
+    "component_help": "../help/help"
+  },
+  "disableScroll": true
+}
+

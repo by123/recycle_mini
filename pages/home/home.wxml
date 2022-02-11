@@ -1,0 +1,23 @@
+<!--pages/home/home.wxml-->
+<view class="container">
+  <view class='homepage'>
+    <image src="{{image}}" class='img_tips'></image>
+    <view class='input_view'>
+      <input class="input_search" placeholder="搜索垃圾查看分类" placeholder-style="color:#AFB7CA" bindconfirm="onTextChange" value="{{inputValue}}">
+      </input>
+      <image class="img_search" src="../../imgs/ic_search.png" bindtap="onSearchTap"></image>
+    </view>
+    <view hidden="{{hasDatas || isFirst}}">
+      <text class="noresult normal_txt" bindtap="onAddTap">搜索不到结果？<text class="add">去添加</text></text>
+    </view>
+    <scroll-view scroll-y="true" class='scrollview' bindscrolltolower="onReachBottom" hidden="{{!hasDatas || isFirst}}">
+      <view wx:for="{{datas}}" class='list' wx:key="key" data-index="{{index}}" bindtap='onItemClick'>
+        <text class="result">{{item.name}}<text  wx:if="{{item.cid == 1}}" class="recycle_color">({{item.cname}})</text>
+        <text wx:elif="{{item.cid == 2}}" class="hazardous_color">({{item.cname}})</text>
+        <text wx:elif="{{item.cid == 3}}" class="household_color">({{item.cname}})</text>
+        <text wx:else class="residual_color">({{item.cname}})</text>
+        </text>
+      </view>
+    </scroll-view>
+  </view>
+</view>

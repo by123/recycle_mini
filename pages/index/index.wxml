@@ -1,0 +1,37 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="indexpage" hidden="{{hiddenIndex}}">
+    <image src="../../imgs/bg.png" class="img_bg" mode="aspectFill"></image>
+    <view class="tabbar">
+      <view wx:for="{{imgs}}" wx:key="key" class="tabview" data-index="{{index}}" bindtap="swichNav">
+        <image src="{{item}}" class="img_menu {{currentTab == index ? 'active' : ''}}" mode="aspectFit"></image>
+      </view>
+    </view>
+    <view class="component">
+      <view hidden="{{currentTab == 0? false: true}}">
+        <component_home/>
+      </view>
+      <view hidden="{{currentTab == 1? false: true}}">
+        <component_test/>
+      </view>
+      <view hidden="{{currentTab == 2? false: true}}">
+        <component_category/>
+      </view>
+      <view hidden="{{currentTab == 3? false: true}}">
+        <component_help/>
+      </view>
+    </view>
+  </view>
+
+  <view class='startpage' hidden="{{hiddenAuth}}">
+    <image class='start_image' src="../../imgs/logo.png"></image>
+    <view class='start_txt'>上门垃圾分类</view>
+    <view class='start_line'></view>
+
+    <view class="start_title_view">
+      <view class='start_main_title'>登陆后上门垃圾分类将获得以下权限</view>
+      <view class='start_sub_title'>· 获得您的公开信息(昵称、头像、地理位置等）</view>
+    </view>
+    <button type='primary' open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo" class='start_login_btn'>确认登录</button>
+  </view>
+</view>

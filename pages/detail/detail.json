@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "xht-ad": "/components/xhtAD/xhtAD"
+  },
+  "navigationBarTitleText": "详情"
+}

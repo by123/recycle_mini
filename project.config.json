@@ -1,0 +1,116 @@
+{
+	"cloudfunctionRoot": "server/",
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"enhance": false,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"coverView": true,
+		"nodeModules": false,
+		"autoAudits": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		},
+		"uglifyFileName": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.7.2",
+	"appid": "wxd6e4e5116073ea17",
+	"projectname": "%08recycle",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 7,
+			"list": [
+				{
+					"id": -1,
+					"name": "搜索",
+					"pathName": "pages/search/search",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "分类",
+					"pathName": "pages/category/category",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "测试",
+					"pathName": "pages/test/test",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "题目",
+					"pathName": "pages/exam/exam",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "帮助",
+					"pathName": "pages/help/help",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "意见反馈",
+					"pathName": "pages/advice/advice",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "添加",
+					"pathName": "pages/add/add",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "详情",
+					"pathName": "pages/detail/detail",
+					"query": "rid=3",
+					"scene": null
+				}
+			]
+		}
+	}
+}
